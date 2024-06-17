@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="my.css">
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+
+            .sticky-top {
+        position: sticky;
+        top: 20px; /* 원하는 위치에 따라 조절할 수 있습니다 */
+        z-index: 1000; /* 다른 요소들 위에 위치하게 설정 */
+    }
+        }
+    </style>
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu" class="pg1">
+
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md bg-black navbar-dark">
+        <div class="container">
+
+            <a class="gugi-font navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="로고">
+                &ensp;Girls Who Game</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">MAIN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="2.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="3.html">COMMUNITY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="4.html">GUIDES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="5.html">WRITE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="6.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 영역 끝 -->
+
+ <!-- 헤더 영역 시작 -->
+ <header id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 text-white">
+
+    <img src="img/mainlogo.png" alt="로고">
+    <h4 class="fs-2 mb-3">Girls Who Game</h4>
+    <p class="lead mb-5">함께하는 게임의 즐거움</p>
+    <button type="button" data-bs-toggle="modal" data-bs-target="#bestmenuModal"
+        class="btn btn-outline-info rounded-pill fw-bold" onClick="location.href='2.html'">Who Are You?</button>
+
+  </header>
+<!-- 헤더 영역 끝 -->
+
+<!-- 소개 섹션 시작 -->
+<section class="container py-5 header3 border-top">
+
+    <div class="image text-center">
+        <img src="img/triangle.png" class="img-fluid">
+    </div>
+
+    <div class="text-center py-5">
+        <h1 class="fw-bold">&ensp;</h1>
+        <h1 class="fw-bold">OUR MOTTO</h1>
+        <p class="lead text-muted">This is what keeps us going!</p>
+    </div>
+
+    <div class="row justify-content-center align-items-center mb-5">    
+        <div class="col-md-7">
+            <img src="img/motto.png" class="img-fluid">
+        </div>
+        <div class="col-md-7 col-lg-5 px-lg-5">
+            <h3 class="mb-3">여러분과 함께하는 마음가짐</h3>
+            <p class="lh-lg">다양한 게임을 하는 여성 사용자층 모두가 환영받고 즐거운 시간을 보낼 수 있는 커뮤니티를 구축하는 것이 저희가 추구하는 최종적인 목표입니다.
+                게임이라는 공통된 주제 아래 모인 이들 모두가 즐길 수 있는 시간이 되었으면 합니다.</p>
+            <p class="lh-lg">서로에게 가르쳐주고, 서로에게서 배워주세요. 나머지 즐거움은 저희가 제공해 드릴 수 있도록 노력하겠습니다.</p>
+        </div>
+    </div>
+
+</section>
+<!-- 소개 섹션 끝 -->
+
+<header class="py-5 bg-light border-top mb-4 header0">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="fw-bold">&ensp;</h1>
+            <h1 class="fw-bolder">This Week</h1>
+            <p class="lead mb-0">이번주의 인기 글을 모아보세요!</p>
+        </div>
+    </div>
+
+</header>
+<!-- Page content-->
+<div class="container">
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+            <!-- Featured blog post-->
+            <div class="card mb-4 style ">
+                <a href="#!"><img class="card-img-top" src="img/main1.png" alt="..." /></a>
+                <div class="card-body">
+                    <div class="small text-muted">
+                        June 15, 2024  &ensp;
+                        <a class="badge bg-light text-decoration-none link-dark" href="#!">질문</a>
+                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">사담</a>
+                    </div>
+                    <div>&ensp;</div>
+                    <h2 class="card-title">[마인크래프트] 처음으로 지은 집입니다!</h2>
+                    <p class="card-text">여러분의 도움 덕분에 어제 마인크래프트를 설치해볼 수 있었어요. 감사드려요! 게임 자체는 영상으로 봐서 어렵지 않게 익힐 수 있었습니다.
+                        그래서 집을 지어봤는데 생각보다 과정도 재미있더라고요 ㅎㅎ ... </p>
+                    <button type="button" class="btn btn-light" onClick="location.href='1.html'">Read more →</a>
+                </div>
+            </div>
+            <!-- Nested row for non-featured blog posts-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="img/main2.png" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">
+                                June 14, 2024  &ensp;
+                                <a class="badge bg-info text-decoration-none link-dark" href="#!">영상</a>
+                                <a class="badge bg-light text-decoration-none link-dark" href="#!">정보</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">사담</a>
+                            </div>   
+                            <div>&ensp;</div>
+                            <h2 class="card-title h4">[파판14] 새 탈것을 얻었어요! </h2>
+                            <p class="card-text">나온지는 좀 되었지만, 실디하 지하수도를 공략하면 얻을 수 있는 탈것작을 해보았습니다. ...</p>
+                            <a class="btn btn-light" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="img/main3.png" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">
+                                June 17, 2024  &ensp;
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">사담</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">의견</a>
+                            </div>   
+                            <div>&ensp;</div>
+                            <h2 class="card-title h4">[오버워치2] 이벤트 관련</h2>
+                            <p class="card-text">최근에 들어서야 이벤트를 한다는 사실을 알았는데, 이거 참여하시는 분 또 있나요? ...</p>
+                            <a class="btn btn-light" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="img/main4.png" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">
+                                June 18, 2024  &ensp;
+                                <a class="badge bg-light text-decoration-none link-dark" href="#!">정보</a>
+                            </div>   
+                            <div>&ensp;</div>
+                            <h2 class="card-title h4">[스타듀밸리] 공략 정보 공유합니다.</h2>
+                            <p class="card-text">이 루트로 플레이 하시는 분들이 얼마나 계실지는 모르겠지만 저도 정보를 찾는게 어려워서 ...</p>
+                            <a class="btn btn-light" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="img/main5.png" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">
+                                June 13, 2024  &ensp;
+                                <a class="badge bg-light text-decoration-none link-dark" href="#!">정보</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">사담</a>
+                            </div>   
+                            <div>&ensp;</div>
+                            <h2 class="card-title h4">[발로란트] 새 스킨! 너무 예뻐요!</h2>
+                            <p class="card-text">오래 쉬었는데 혹시 이거 보신 분 있나요? 저는 이거 보고 복귀할 마음을 다졌습니다! ... </p>
+                            <a class="btn btn-light" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination-->
+            <nav aria-label="Pagination" class="pagination-nav">
+                <hr class="my-0" />
+                <ul class="pagination justify-content-center my-4">
+                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">15</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">Older</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Side widgets-->
+        <div class="col-lg-4 sidebar">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                        <button class="btn btn-secondary fw-bold" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex justify-content-center">
+                            <ul class="list-unstyled mb-0 text-center w-100">
+                                <li><a class="badge bg-info text-decoration-none link-dark w-100 d-block my-1" href="#!">영상</a></li>
+                                <li><a class="badge bg-secondary text-decoration-none link-light w-100 d-block my-1" href="#!">사담</a></li>
+                                <li><a class="badge bg-secondary text-decoration-none link-light w-100 d-block my-1" href="#!">의견</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-center">
+                            <ul class="list-unstyled mb-0 text-center w-100">
+                                <li><a class="badge bg-light text-decoration-none link-dark w-100 d-block my-1" href="#!">정보</a></li>
+                                <li><a class="badge bg-light text-decoration-none link-dark w-100 d-block my-1" href="#!">공략</a></li>
+                                <li><a class="badge bg-light text-decoration-none link-dark w-100 d-block my-1" href="#!">질문</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Mentions</div>
+                <div class="card-body">
+                    <a class="badge bg-light text-decoration-none link-dark w-100 d-block my-1" href="#!">NEW> 내가 쓴 글에 댓글이 3개 달렸어요!</a>
+                    <a class="badge bg-info text-decoration-none link-dark w-100 d-block my-1" href="#!">NEW> 영상 공유 요청이 들어왔어요!</a>
+                </div>
+                <div class="text-center"> ... </div>
+                <div class="card-body">
+                    <a class="badge bg-secondary text-decoration-none link-light w-100 d-block my-1" href="#!">내가 쓴 글에 댓글이 1개 달렸어요!</a>
+                    <a class="badge bg-secondary text-decoration-none link-light w-100 d-block my-1" href="#!">내가 쓴 글에 댓글이 1개 달렸어요!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer-->
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Girls Who game 2023</div></div>
+            <div class="col-auto">
+                <a class="link-light small" href="#!">Privacy</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Terms</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Contact</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
+</body>
+</html>
