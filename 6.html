@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="my.css">
+     <!-- Favicon-->
+     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu">
+
+    <!-- 네비게이션 영역 시작 -->
+<nav class="navbar navbar-expand-md bg-black navbar-dark">
+    <div class="container">
+        <a class="gugi-font navbar-brand" href="index.html">
+            <img src="img/logo.png">
+            &ensp;Girls Who Game</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+            aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-menu">
+            <ul class="navbar-nav ms-auto my-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">MAIN</a></li>
+                <li class="nav-item"><a class="nav-link" href="2.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="3.html">COMMUNITY</a></li>
+                <li class="nav-item"><a class="nav-link" href="4.html">GUIDES</a></li>
+                <li class="nav-item"><a class="nav-link" href="5.html">WRITE</a></li>
+                <li class="nav-item"><a class="nav-link active" href="6.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- 네비게이션 영역 끝 -->
+
+
+<!-- Page content-->
+<section class="py-5 header22">
+    <div class="container px-5">
+        <!-- Contact form-->
+        <div class="bg-dark rounded-3 py-5 px-4 px-md-5 mb-5 bg-black">
+            <div class="text-center mb-5">
+                <div class="feature bg-dark text-white rounded-circle mb-3"><i class="bi bi-envelope"></i></div>
+                <h1>언제든 연락 주세요!</h1>
+                <p class="lead fw-normal text-muted mb-0">소중한 의견, 모두 듣겠습니다.</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name" class="text-muted" >Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email" class="text-muted" >Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone" class="text-muted" >Phone number</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message" class="text-muted" >Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                        <div>&ensp;</div>
+                        <div>&ensp;</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact cards-->
+        <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
+            <div class="col">
+                <div class="feature bg-black text-white rounded-circle mb-3"><i class="bi bi-chat-dots"></i></div>
+                <div class="h5 mb-2">의견을 들려주세요!</div>
+                <p class="text-muted mb-0">여러분의 의견을 통해 더욱 나은 서비스를 제공해드릴 수 있습니다.</p>
+            </div>
+            <div class="col">
+                <div class="feature bg-black text-white rounded-circle mb-3"><i class="bi bi-people"></i></div>
+                <div class="h5 mb-2">소통하세요!</div>
+                <p class="text-muted mb-0">질문-답변 시스템을 이용해 다른 사용자들에게도 물어보세요.</p>
+            </div>
+            <div class="col">
+                <div class="feature bg-black text-white rounded-circle mb-3"><i class="bi bi-question-circle"></i></div>
+                <div class="h5 mb-2">도움을 구하세요!</div>
+                <p class="text-muted mb-0">남겨둔 연락처 중 하나로 연락을 주시면 담당자와 연결해드립니다.</p>
+            </div>
+            <div class="col">
+                <div class="feature bg-black text-white rounded-circle mb-3"><i class="bi bi-telephone"></i></div>
+                <div class="h5 mb-2">연락을 주세요!</div>
+                <p class="text-muted mb-0">직접적인 상담이 필요한 경우, 연락이 누락된 경우, 위의 폼을 이용해 주세요.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div>&ensp;</div>
+
+<!-- Footer-->
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Girls Who game 2023</div></div>
+            <div class="col-auto">
+                <a class="link-light small" href="#!">Privacy</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Terms</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Contact</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    </body>
+    </html>
